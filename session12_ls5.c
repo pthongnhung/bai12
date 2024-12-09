@@ -2,14 +2,14 @@
 #include<math.h> 
 int testNumber(int a){
 if(a<=1){
-	return 1; 
+	return 0; 
 } 
 for(int i=2;i<=sqrt(a);i++){
 	if(a%i==0){
-		return 1; 
+		return 0; 
 	}
 }
-	return 0; 
+	return 1; 
 }
 int main(){
 	int num1,num2; 
